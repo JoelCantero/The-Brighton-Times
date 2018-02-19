@@ -106,11 +106,18 @@
     text-align: left !important;
   }
   td:before {
-        content: attr(data-th) !important;
-
+    content: attr(data-th) !important;
     position: absolute;
     left: 12px;
     font-weight: bold;
-    color: blue;
   }
+}
+@media screen and (max-width: 700px) {
+  .weather__today__image {
+    width:50%;
+  }
+    .weather__today__temp, .weather__today__deg {
+    font-size: 1.5em;
+  }
+  
 }
